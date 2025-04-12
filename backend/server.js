@@ -10,7 +10,10 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://67fa9a03e184ee907486b109--stirring-starship-06c468.netlify.app/', // replace with your frontend's URL
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
