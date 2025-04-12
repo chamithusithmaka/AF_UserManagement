@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://67fa9a03e184ee907486b109--stirring-starship-06c468.netlify.app/', // replace with your frontend's URL
+  origin: 'https://stirring-starship-06c468.netlify.app',
   credentials: true
 }));
 app.use(express.json());
