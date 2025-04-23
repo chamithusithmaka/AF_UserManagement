@@ -42,6 +42,9 @@ app.use(express.json());
 // Routes
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
+// Add this below the existing routes
+const favoriteRoutes = require('./routes/favoriteRoutes');
+app.use('/api/favorites', favoriteRoutes);
 
 // MongoDB connection
 mongoose
